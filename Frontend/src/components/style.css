@@ -1,0 +1,131 @@
+/* --- Container --- */
+.sports-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+/* --- Headings --- */
+h2, h3, h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* --- Messages --- */
+.message-banner {
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  font-weight: 500;
+}
+.message-banner.success {
+  border-color: #4CAF50;
+  color: #2E7D32;
+}
+.message-banner.error {
+  border-color: #f44336;
+  color: #B71C1C;
+}
+
+/* --- Form Grid --- */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 8px;
+  border: 1px solid #999;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  border-radius: 0; /* no rounded corners */
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  border-color: #000;
+}
+
+/* --- Buttons --- */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 6px 14px;
+  border: 1px solid #000;
+  background: none; /* no background */
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 0; /* no rounded corners */
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #f2f2f2;
+}
+
+.btn-blue {
+  border-color: #007BFF;
+  color: #007BFF;
+}
+.btn-green {
+  border-color: #2E7D32;
+  color: #2E7D32;
+}
+.btn-red {
+  border-color: #C62828;
+  color: #C62828;
+}
+.btn-gray {
+  border-color: #555;
+  color: #555;
+}
+
+/* --- Table --- */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #999;
+}
+
+th, td {
+  border: 1px solid #999;
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+}
+
+th {
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #fafafa;
+}
+
+/* --- Action Buttons inside table --- */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
